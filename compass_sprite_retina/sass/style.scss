@@ -1,0 +1,23 @@
+@import "retina-sprites";
+
+body{
+	background: #ccc;
+	.icon{
+		span{
+			float: left;
+			margin: 10px;
+			&.icon-facebook{
+				@include use-sprite("facebook");
+			}
+			&.icon-in{
+				@include use-sprite("in");
+			}
+			&.icon-skype{
+				@include use-sprite("skype");
+			}
+			&.icon-twitter{
+				@include use-sprite("twitter");
+			}
+		}
+	}
+}
